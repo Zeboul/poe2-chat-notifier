@@ -1,0 +1,12 @@
+# Runtime outputs
+*.log
+__pycache__
+# Test files
+logs/
+# Release process artifacts
+poe2-notifier-*/
+poe2-chat-notifier-*/
+*.zip
+build/
+dist/
+poe2-chat-notifier.spec
