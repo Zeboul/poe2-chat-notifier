@@ -36,7 +36,7 @@ file before running the `poe2-chat-notifier` program.
 
 ```
 pip3 install -U git+https://github.com/Zeboul/poe2-chat-notifier
-curl -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
+curl.exe -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
 poe2-chat-notifier
 ```
 
