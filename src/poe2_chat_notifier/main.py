@@ -6,7 +6,7 @@ import re
 import sys
 import time
 
-from notifier import create_notifier
+from .notifier import create_notifier
 
 
 CONFIG_PATH = Path('./config.ini')
@@ -156,7 +156,3 @@ def main() -> int:
                         is_not_outgoing_dm(entry.message)):
                     notifier.notify(entry.message, always_play_sound)
     return 0
-
-
-if __name__ == '__main__':
-    sys.exit(main())
