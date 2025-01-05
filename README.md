@@ -28,21 +28,23 @@ state, or make any network communcations. It only reads from an event log file
     - A console window will stay open that displays a chat log. If it does not
       stay open, open the `poe2-chat-notifier.log` file to view error messages.
 
-The included `config.ini` configuration file explains each option. If the
-configuration file is changed, the poe2-chat-notifier must be closed and
-then run again for the changes to take effect.
-
 ### From Source
 
 These steps will download and install the program and a default `config.ini`
-file. You may need to customize the `config.ini` file before running the
-`poe2-chat-notifier` program.
+file. You may need to update the `POE_DIRECTORY` option in the `config.ini`
+file before running the `poe2-chat-notifier` program.
 
 ```
 pip3 install -U git+https://github.com/Zeboul/poe2-chat-notifier
 curl -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
 poe2-chat-notifier
 ```
+
+### Additional Configuration
+
+The included `config.ini` configuration file explains each option. If the
+configuration file is changed, the poe2-chat-notifier must be closed and
+then run again for the changes to take effect.
 
 ## Known Issues and Limitations
 
