@@ -1,7 +1,5 @@
 Path of Exile 2 chat notifier tool.
 
-Release downloads: [https://github.com/Zeboul/poe2-chat-notifier/releases](https://github.com/Zeboul/poe2-chat-notifier/releases)
-
 When you receive a chat message, this tool will send a notification to you while
 the game is minimized or you are tabbed-out, and by default will also make a
 notification sound when you are in game. Chat messages will also be displayed in
@@ -17,7 +15,10 @@ state, or make any network communcations. It only reads from an event log file
 
 ## Configure and Run
 
-1. Extract the release zip file.
+### From Binaries
+
+1. Download and extract the release zip file.
+    - [https://github.com/Zeboul/poe2-chat-notifier/releases](https://github.com/Zeboul/poe2-chat-notifier/releases)
 2. Edit the `config.ini` file to have the correct PoE2 installation directory
    (`POE2_DIRECTORY` option).
 3. Double-click the `poe2-chat-notifier.exe` file. The first run might take
@@ -30,6 +31,18 @@ state, or make any network communcations. It only reads from an event log file
 The included `config.ini` configuration file explains each option. If the
 configuration file is changed, the poe2-chat-notifier must be closed and
 then run again for the changes to take effect.
+
+### From Source
+
+These steps will download and install the program and a default `config.ini`
+file. You may need to customize the `config.ini` file before running the
+`poe2-chat-notifier` program.
+
+```
+pip3 install git+https://github.com/Zeboul/poe2-chat-notifier
+curl -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
+poe2-chat-notifier
+```
 
 ## Known Issues and Limitations
 
