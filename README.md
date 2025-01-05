@@ -22,6 +22,8 @@ state, or make any network communcations. It only reads from an event log file
    (`POE2_DIRECTORY` option).
 3. Double-click the `poe2-chat-notifier.exe` file. The first run might take
    longer since Windows may scan it for viruses.
+    - If a "Windows protected your PC" window pops up, click "More info" and
+      then "Run anyway".
     - A console window will stay open that displays a chat log. If it does not
       stay open, open the `poe2-chat-notifier.log` file to view error messages.
 
