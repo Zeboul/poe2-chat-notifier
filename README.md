@@ -34,9 +34,11 @@ These steps will download and install the program and a default `config.ini`
 file. You may need to update the `POE_DIRECTORY` option in the `config.ini`
 file before running the `poe2-chat-notifier` program.
 
+If you are on Windows, use cmd (not powershell) to run these commands.
+
 ```
 pip3 install -U git+https://github.com/Zeboul/poe2-chat-notifier
-curl.exe -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
+curl -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
 poe2-chat-notifier
 ```
 
