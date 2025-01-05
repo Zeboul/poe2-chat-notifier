@@ -5,6 +5,10 @@ build-backend = 'hatchling.build'
 [project]
 name = 'poe2-chat-notifier'
 version = '1.0.0'
+dependencies = [
+    "pywin32; platform_system=='Windows'",
+    "windows-toasts; platform_system=='Windows'",
+]
 
 [project.scripts]
 poe2-chat-notifier = 'poe2_chat_notifier.main:main'
