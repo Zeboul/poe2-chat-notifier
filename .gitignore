@@ -9,4 +9,4 @@ poe2-chat-notifier-*/
 *.zip
 build/
 dist/
-poe2-chat-notifier.spec
+__main__.spec
