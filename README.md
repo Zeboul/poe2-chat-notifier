@@ -50,3 +50,17 @@ poe2-chat-notifier
 - Has only been tested on Windows 11.
 - Notifications are only supported on Windows, on other operating systems chat
   messages will only be printed to the console.
+
+## For Developers
+
+```
+git clone https://github.com/Zeboul/poe2-chat-notifier
+cd poe2-chat-notifier
+pip3 install -e .
+```
+
+To package a release:
+
+```
+python package.py RELEASE_VERSION
+```
