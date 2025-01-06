@@ -37,7 +37,7 @@ file before running the `poe2-chat-notifier` program.
 If you are on Windows, use cmd (not powershell) to run these commands.
 
 ```
-pip3 install -U git+https://github.com/Zeboul/poe2-chat-notifier
+python -m pip install -U git+https://github.com/Zeboul/poe2-chat-notifier
 curl -O --no-clobber https://raw.githubusercontent.com/Zeboul/poe2-chat-notifier/refs/heads/main/config.ini
 poe2-chat-notifier
 ```
@@ -60,7 +60,7 @@ then run again for the changes to take effect.
 ```
 git clone https://github.com/Zeboul/poe2-chat-notifier
 cd poe2-chat-notifier
-pip3 install -e .
+python -m pip install -e .
 ```
 
 To package a release:
