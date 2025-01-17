@@ -19,8 +19,11 @@ class LogEntry:
                     log_line, flags=re.ASCII) is not None:
             self._message = log_line.split(']')[1].strip()
             self._type = log_line.split()[3]
-            # I've seen two different identifiers for chat messages in PoE2
-            chat_ids = ['3ef2336f', '3ef2336d']
+            # I've seen three different identifiers for chat messages in PoE2
+            # TODO: Determine which bits at the bottom are subject to change
+            #       and use that to have this not break every time the game is
+            #       patched.
+            chat_ids = ['3ef2336b', '3ef2336f', '3ef2336d']
             if self._type.lower() in chat_ids:
                 self._type = 'chat'
         else:
