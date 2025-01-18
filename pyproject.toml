@@ -4,7 +4,7 @@ build-backend = 'hatchling.build'
 
 [project]
 name = 'poe2-chat-notifier'
-version = '1.0.0'
+version = '1.1.0'
 requires-python = ">=3.6" # For fstring support.
 dependencies = [
     "pywin32; platform_system=='Windows'",
