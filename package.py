@@ -25,6 +25,7 @@ def main() -> int:
     full_release_name = f'poe2-chat-notifier-{release_version}'
     pyinstaller_args = [
         str(Path('./src/poe2_chat_notifier/__main__.py')),
+        '-n', 'poe2-chat-notifier',
         '-y',
     ]
     if platform.system() == 'Windows':
